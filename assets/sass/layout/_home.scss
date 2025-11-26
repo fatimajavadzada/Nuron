@@ -662,8 +662,6 @@
   transform: translateX(5px);
 }
 
-/* RESPONSIVE */
-
 @media (max-width: 1200px) {
   .steps-wrapper {
     grid-template-columns: repeat(3, 1fr);
@@ -710,7 +708,6 @@
     top: -18px;
   }
 }
-
 
 //! Newsletter
 .newsletter {

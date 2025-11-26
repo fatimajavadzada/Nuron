@@ -788,7 +788,6 @@ a {
   gap: 30px;
 }
 
-/* CARD */
 .step-card {
   background: rgba(36, 36, 53, 0.3411764706);
   border-radius: 14px;
@@ -803,7 +802,6 @@ a {
   cursor: pointer;
 }
 
-/* Floating icons */
 .step-floating-icon {
   position: absolute;
   top: -20px;
@@ -812,21 +810,18 @@ a {
   pointer-events: none;
 }
 
-/* STEP NUMBER */
 .step-number {
   color: #999;
   font-size: 14px;
   letter-spacing: 1px;
 }
 
-/* HEADING */
 .step-heading {
   color: #fff;
   font-size: 22px;
   margin: 15px 0;
 }
 
-/* TEXT */
 .step-text {
   color: #9d9d9e;
   font-size: 15px;
@@ -834,7 +829,6 @@ a {
   margin-bottom: 30px;
 }
 
-/* Arrow button */
 .step-arrow i {
   font-size: 20px;
   color: #9d9d9e;
@@ -850,6 +844,44 @@ a {
   transform: translateX(5px);
 }
 
+@media (max-width: 1200px) {
+  .steps-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 992px) {
+  .steps-title {
+    font-size: 32px;
+  }
+  .steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+  .step-card {
+    padding: 35px 25px;
+  }
+  .step-heading {
+    font-size: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .steps-title {
+    font-size: 28px;
+    text-align: center;
+  }
+  .steps-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+  .step-card {
+    padding: 30px 20px;
+  }
+  .step-floating-icon {
+    width: 60px;
+    right: 15px;
+    top: -18px;
+  }
+}
 .newsletter {
   max-width: 1440px;
   margin: 0 auto;

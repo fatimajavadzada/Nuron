@@ -1,0 +1,32 @@
+@mixin transition($property: all) {
+  transition: $property 0.3s ease;
+}
+
+@mixin hover-underline(
+  $color: $color-primary,
+  $height: 2px,
+  $gap: 3px,
+  $duration: 0.25s
+) {
+  position: relative;
+  transition: color $duration ease;
+
+  &:hover {
+    color: $color;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -$gap;
+    width: 0%;
+    height: $height;
+    background-color: $color;
+    transition: width $duration ease;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "sass": "^1.94.2"
+  },
+  "name": "nuronn",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "sass": "sass assets/sass/main.scss assets/styles/main.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

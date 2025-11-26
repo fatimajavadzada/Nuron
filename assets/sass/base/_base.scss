@@ -1,0 +1,17 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-primary;
+  background-color: $background-color-3;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

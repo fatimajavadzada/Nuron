@@ -769,26 +769,26 @@ a {
     grid-template-columns: 1fr;
   }
 }
-.nft-steps {
+.process-steps {
   padding: 2px 16px;
   max-width: 1440px;
   margin: 0 auto;
 }
 
-.steps-title {
+.process-title {
   font-size: 38px;
   font-weight: 700;
   color: #fff;
   margin-bottom: 40px;
 }
 
-.steps-grid {
+.steps-wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
 
-.step-card {
+.step-box {
   background: rgba(36, 36, 53, 0.3411764706);
   border-radius: 14px;
   padding: 40px 30px;
@@ -797,12 +797,12 @@ a {
   border: 1px solid transparent;
 }
 
-.step-card:hover {
+.step-box:hover {
   transform: translateY(-5px);
   cursor: pointer;
 }
 
-.step-floating-icon {
+.step-icon {
   position: absolute;
   top: -20px;
   right: 20px;
@@ -810,73 +810,78 @@ a {
   pointer-events: none;
 }
 
-.step-number {
+.step-count {
   color: #999;
   font-size: 14px;
   letter-spacing: 1px;
 }
 
-.step-heading {
+.step-title {
   color: #fff;
   font-size: 22px;
   margin: 15px 0;
 }
 
-.step-text {
+.highlight-title {
+  /* Extra class if you want to style special heading */
+}
+
+.step-description {
   color: #9d9d9e;
   font-size: 15px;
   line-height: 1.6;
   margin-bottom: 30px;
 }
 
-.step-arrow i {
+.step-next i {
   font-size: 20px;
   color: #9d9d9e;
   transition: 0.3s;
 }
 
-.step-card:hover .step-heading {
+.step-box:hover .step-title {
   color: #00a3ff;
 }
 
-.step-card:hover .step-arrow i {
+.step-box:hover .step-next i {
   color: #00a3ff;
   transform: translateX(5px);
 }
 
+/* RESPONSIVE */
 @media (max-width: 1200px) {
-  .steps-grid {
+  .steps-wrapper {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (max-width: 992px) {
-  .steps-title {
+  .process-title {
     font-size: 32px;
   }
-  .steps-grid {
+  .steps-wrapper {
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
   }
-  .step-card {
+  .step-box {
     padding: 35px 25px;
   }
-  .step-heading {
+  .step-title {
     font-size: 20px;
   }
 }
 @media (max-width: 600px) {
-  .steps-title {
+  .process-title {
     font-size: 28px;
     text-align: center;
   }
-  .steps-grid {
+  .steps-wrapper {
     grid-template-columns: 1fr;
     gap: 22px;
   }
-  .step-card {
+  .step-box {
     padding: 30px 20px;
   }
-  .step-floating-icon {
+  .step-icon {
     width: 60px;
     right: 15px;
     top: -18px;
